@@ -13,21 +13,24 @@ def parse_input(string: str):
 
 
 def pt1():
-    ...
+    return pt1_ans
 
 
 def pt2():
-    ...
+    return pt2_ans
 
 
-def main(input: str):
+def main(puzzle: str):
     # TODO parse input and test
 
     assert pt1_ans == pt1(test)
+    print(f"Part 1: {pt1(puzzle)}")
+    
     assert pt2_ans == pt2(test)
+    print(f"Part 2: {pt2(puzzle)}")
 
 
 if __name__ == "__main__":
     with open(f'puzzles/{day}.txt', 'r') as f:
-        input = f.read()
-        main(input)
+        puzzle = f.read()
+        main(puzzle)
