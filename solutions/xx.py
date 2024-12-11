@@ -1,5 +1,5 @@
-# TODO replace with AOC day
-day: str = "00"
+import os
+day: str = os.path.basename(__file__).split('.')[0] # name file between 01 and 25
 
 # TODO replace with test input and corresponding answers
 test: str = """
