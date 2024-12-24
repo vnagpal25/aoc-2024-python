@@ -1,5 +1,8 @@
 import os
-day: str = os.path.basename(__file__).split('.')[0] # name file between 01 and 25
+import pdb
+from tqdm import tqdm
+day: str = os.path.basename(__file__).split(
+    '.')[0]  # name file between 01 and 25
 
 # TODO replace with test input and corresponding answers
 test: str = """
@@ -25,7 +28,7 @@ def main(puzzle: str):
 
     assert pt1_ans == pt1(test)
     print(f"Part 1: {pt1(puzzle)}")
-    
+
     assert pt2_ans == pt2(test)
     print(f"Part 2: {pt2(puzzle)}")
 
